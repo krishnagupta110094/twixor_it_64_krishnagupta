@@ -1,0 +1,101 @@
+.meesho-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.sort-container {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 12px;
+  background: white;
+}
+
+.sort-label {
+  font-size: 14px;
+}
+
+.filters-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 16px;
+  background: white;
+}
+
+.filters-text {
+  font-size: 12px;
+  color: #8b8b8b;
+  margin: 0;
+}
+.product-count {
+  font-size: 11px;
+  color: #bcbcbc;
+  margin: 2px 0 0 0;
+}
+.divider {
+  border: 0;
+  border-top: 1px solid #f2f2f2;
+  margin: 15px 0;
+  height: 1px;
+  width: 100%;
+}
+
+.category-toggle {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.sidebar-search {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #9f2089; /* Meesho Pink Color */
+}
+
+.category-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px; 
+  user-select: none;
+}
+
+.filter-options {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.chevron-icon {
+  font-size: 10px; 
+  color: #666;
+}
+
+.filter-section:first-child .divider {
+  display: none; 
+}

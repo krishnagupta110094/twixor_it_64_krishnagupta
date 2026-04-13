@@ -1,0 +1,33 @@
+.page-wrapper {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.content-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.layout-body {
+  display: flex;
+  gap: 30px;
+}
+
+/* Mobile responsive toggle */
+@media (max-width: 900px) {
+  .layout-body {
+    flex-direction: column;
+  }
+  .meesho-sidebar {
+    width: 100%;
+  }
+}

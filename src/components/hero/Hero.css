@@ -1,0 +1,63 @@
+.banner-section {
+  width: 100%;
+  padding: 1px 0;
+  background-color: #fff;
+}
+
+.banner-container {
+  margin: 0 auto;
+  height: clamp(220px, 30vw, 350px);
+  background-image: url("https://images.meesho.com/images/marketing/1767796583251.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: clamp(20px, 5vw, 80px);
+}
+
+.text-section {
+  color: #fff;
+}
+
+.main-title {
+  font-size: clamp(20px, 3vw, 42px);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.sub-title {
+  font-size: clamp(16px, 2.5vw, 36px);
+  font-weight: 500;
+  margin: 10px 0 20px;
+  line-height: 1.1;
+}
+
+/* BUTTON */
+.shop-now-btn {
+  background-color: #fff;
+  color: #551d50;
+  border: none;
+  padding: clamp(8px, 1vw, 12px) clamp(20px, 3vw, 35px);
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 20;
+}
+
+
+
+/*  MEDIA QUERY */
+@media screen and (max-width: 750px) {
+  .banner-container {
+    display: none;
+  }
+}
