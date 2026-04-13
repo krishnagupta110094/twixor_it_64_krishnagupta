@@ -1,47 +1,37 @@
+## 📂 Project Structure
+
+The project follows a modular component-based architecture to ensure scalability and ease of maintenance.
+
+```text
 src/
-│
-├── assets/                 # (Added) For Meesho logos and static icons
+├── assets/                 # Brand logos and static UI assets
 │   └── images/
 │
 ├── components/             # Reusable UI building blocks
-│   ├── Navbar/
-│   │   ├── Navbar.jsx
-│   │   └── Navbar.css
-│   ├── CategoryNav/        
-│   │   ├── CategoryNav.jsx
-│   │   └── CategoryNav.css
-│   ├── Hero/
-│   │   ├── Hero.jsx
-│   │   └── Hero.css
-│   ├── Features/
-│   │   ├── Features.jsx
-│   │   └── Features.css
-│   ├── TopCategories/      
-│   │   ├── TopCategories.jsx
-│   │   └── TopCategories.css
-│   ├── MainProductPage/            
-│   │   ├── Sidebar.jsx
-│   │   └── Sidebar.css
-│   │   ├── ProductGrid.jsx
-│   │   ├── ProductGrid.css
-
-│   │   ├── MainProductPage.jsx
-│   │   └── MainProductPage.css
-│   └── Footer/             
-│       ├── Footer.jsx
-│       └── Footer.css
+│   ├── Navbar/             # Main navigation with search and profile
+│   ├── CategoryNav/        # Sub-navigation for product categories
+│   ├── Hero/               # Promotional banners with Framer Motion
+│   ├── Features/           # Trust markers (Free Delivery, Cash on Delivery)
+│   ├── TopCategories/      # Visual category grid
+│   │
+│   ├── MainProductPage/    # Compound Component for Product Listing
+│   │   ├── MainProductPage.jsx   # Layout wrapper (Flexbox/Grid)
+│   │   ├── Sidebar.jsx           # Dynamic filters with toggle logic
+│   │   └── ProductGrid.jsx      # Product listing display
+│   │
+│   └── Footer/             # SEO-friendly footer links
 │
-├── pages/                  
-│   └── Home.jsx 
+├── pages/                  # Route-level components
+│   └── Home.jsx            # Orchestrates all sections
 │
-├── data/             
-│   ├── category.js       
-│   ├── filter.js          
-│   ├── product.js         
-│   └── topCategories.js   
+├── data/                   # Decoupled Data Layer
+│   ├── category.js         # Data for CategoryNav
+│   ├── filter.js           # Configuration for Sidebar filters
+│   ├── product.js          # Mock product dataset
+│   └── topCategories.js    # Data for the TopCategories section
 │
 ├── styles/
-│   └── global.css         
+│   └── global.css          # CSS variables and global resets
 │
-├── App.jsx                 
-└── main.jsx                # Entry point
+├── App.jsx                 # Application entry point & Routing
+└── main.jsx                # React DOM rendering
