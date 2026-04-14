@@ -1,16 +1,37 @@
-# React + Vite
+## 📂 Project Structure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project follows a modular component-based architecture to ensure scalability and ease of maintenance.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── assets/                 # Brand logos and static UI assets
+│   └── images/
+│
+├── components/             # Reusable UI building blocks
+│   ├── Navbar/             # Main navigation with search and profile
+│   ├── CategoryNav/        # Sub-navigation for product categories
+│   ├── Hero/               # Promotional banners with Framer Motion
+│   ├── Features/           # Trust markers (Free Delivery, Cash on Delivery)
+│   ├── TopCategories/      # Visual category grid
+│   │
+│   ├── MainProductPage/    # Compound Component for Product Listing
+│   │   ├── MainProductPage.jsx   # Layout wrapper (Flexbox/Grid)
+│   │   ├── Sidebar.jsx           # Dynamic filters with toggle logic
+│   │   └── ProductGrid.jsx      # Product listing display
+│   │
+│   └── Footer/             # SEO-friendly footer links
+│
+├── pages/                  # Route-level components
+│   └── Home.jsx            # Orchestrates all sections
+│
+├── data/                   # Decoupled Data Layer
+│   ├── category.js         # Data for CategoryNav
+│   ├── filter.js           # Configuration for Sidebar filters
+│   ├── product.js          # Mock product dataset
+│   └── topCategories.js    # Data for the TopCategories section
+│
+├── styles/
+│   └── global.css          # CSS variables and global resets
+│
+├── App.jsx                 # Application entry point & Routing
+└── main.jsx                # React DOM rendering
