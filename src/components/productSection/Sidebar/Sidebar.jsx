@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import { filters } from "../../data/filter";
+import { filters } from "../../../data/filter";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Sidebar = () => {

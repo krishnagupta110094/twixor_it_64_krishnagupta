@@ -1,8 +1,8 @@
 import React from "react";
-import style from "./Hero.module.css";
+import style from "./PopularBanner.module.css";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const PopularBanner = () => {
   return (
     <motion.section
       className={style["banner-section"]}
@@ -24,7 +24,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Smart Shopping
+              Trending Now
             </motion.h1>
 
             <motion.h2
@@ -33,7 +33,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
-              Trusted by Millions
+              Join 2M+ shoppers discovering today's top picks
             </motion.h2>
 
             <motion.button
@@ -60,4 +60,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default PopularBanner;

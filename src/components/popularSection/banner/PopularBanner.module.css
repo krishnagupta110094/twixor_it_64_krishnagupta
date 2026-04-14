@@ -1,0 +1,59 @@
+.banner-section {
+  width: 100%;
+  padding: 1px 0;
+  background-color: #fff;
+  margin-top: 4px;
+}
+
+.banner-container {
+  margin: 0 auto;
+  height: clamp(170px, 50vw, 650px);
+  background-image: url("https://images.meesho.com/images/marketing/1744698265981.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: clamp(20px, 5vw, 80px);
+}
+
+.text-section {
+  color: #fff;
+}
+
+.main-title {
+  font-size: clamp(14px, 3vw, 42px);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.sub-title {
+  width: 30vw;
+  font-size: clamp(10px, 2.5vw, 36px);
+  font-weight: 500;
+  margin: clamp(10px, 2vw, 20px) 0;
+  line-height: 1.1;
+  /* text-wrap: nowarap; */
+}
+
+/* BUTTON */
+.shop-now-btn {
+  background-color: #fff;
+  color: #551d50;
+  border: none;
+  padding: clamp(4px, 1vw, 12px) clamp(10px, 3vw, 35px);
+  font-size: clamp(10px, 1.2vw, 18px);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 20;
+}
+
+

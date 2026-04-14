@@ -1,5 +1,5 @@
 import React from "react";
-import { products } from "../../data/product";
+import { products } from "../../../data/product";
 import "./ProductGrid.css";
 import { motion } from "motion/react";
 

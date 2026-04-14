@@ -1,7 +1,7 @@
-import React from 'react';
-import Sidebar from './Sidebar';
-import ProductGrid from './ProductGrid';
-import './MainProductPage.css';
+import React from "react";
+import Sidebar from "./Sidebar/Sidebar";
+import ProductGrid from "./productGrid/ProductGrid";
+import "./MainProductPage.css";
 
 const MainProductPage = () => {
   return (
