@@ -17,7 +17,6 @@
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
-
 }
 
 .category-scroll-container::-webkit-scrollbar {
@@ -37,14 +36,14 @@
 }
 
 .category-name.active {
-  color: #9f2089; 
+  color: #9f2089;
   border-bottom: 3px solid #9f2089;
 }
 
 /* --- MEGA MENU BOX --- */
 .mega-menu {
   position: absolute;
-  top: 10; 
+  top: 45px;
   left: 0;
   width: 99vw;
   background-color: #ffffff;
@@ -59,7 +58,7 @@
   margin: 0 auto;
   padding: 30px 20px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -109,6 +108,6 @@
 /* Mobile Responsive */
 @media screen and (max-width: 750px) {
   .category-navbar {
-    display: none; 
+    display: none;
   }
 }
