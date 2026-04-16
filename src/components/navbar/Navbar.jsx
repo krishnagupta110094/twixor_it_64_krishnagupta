@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Search, User, ShoppingCart } from "lucide-react";
 import { motion } from "motion/react";
+import DesktopLogo from "../../assets/meesho_logo.png";
+import MobileLogo from "../../assets/logo_mob.png";
 
 const Navbar = () => {
   const [placeholderText, setPlaceholderText] = useState("");
@@ -43,16 +45,8 @@ const Navbar = () => {
       <div className="nav-container">
         {/* Logo Section */}
         <div className="logo">
-          <img
-            className="desktop"
-            src="/src/assets/meesho_logo.png"
-            alt="Meesho Logo"
-          />
-          <img
-            className="mobile"
-            src="/src/assets/logo_mob.png"
-            alt="Meesho Logo"
-          />
+          <img className="desktop" src={DesktopLogo} alt="Meesho Logo" />
+          <img className="mobile" src={MobileLogo} alt="Meesho Logo" />
         </div>
 
         {/* Search Section */}
